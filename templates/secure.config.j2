@@ -10,3 +10,7 @@
 [ldap]
         password = {{ gerrit_ldap_password }}
 {% endif %}
+{% if gerrit_sendmail_pass is defined %}
+[ldap]
+        smtpPass = {{ gerrit_sendmail_pass }}
+{% endif %}
