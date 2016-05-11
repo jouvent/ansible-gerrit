@@ -33,18 +33,18 @@
         groupName = {{ gerrit_ldap_group_name }}
 {% endif %}
 [sendemail]
-{% if gerrit_sendmail_from is defined %}
+{% if gerrit_sendemail_from is defined %}
         from = {{ gerrit_from }}
 {% endif %}
         smtpServer = {{ gerrit_sendemail_smtp_server }}
-{% if gerrit_sendmail_smtp_server_port is defined %}
-        smtpServerPort = {{ gerrit_sendmail_smtp_server_port }}
+{% if gerrit_sendemail_smtp_server_port is defined %}
+        smtpServerPort = {{ gerrit_sendemail_smtp_server_port }}
 {% endif %}
-{% if gerrit_sendmail_smtp_encryption is defined %}
-        smtpEncryption = {{ gerrit_sendmail_encryption }}
+{% if gerrit_sendemail_smtp_encryption is defined %}
+        smtpEncryption = {{ gerrit_sendemail_smtp_encryption }}
 {% endif %}
-{% if gerrit_sendmail_user is defined %}
-        smtpUser = {{ gerrit_sendmail_user }}
+{% if gerrit_sendemail_user is defined %}
+        smtpUser = {{ gerrit_sendemail_user }}
 {% endif %}
 [container]
         user = {{ gerrit_user }}
