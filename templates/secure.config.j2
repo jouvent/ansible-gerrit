@@ -1,5 +1,5 @@
-[auth]
 {% if gerrit_auth_register_email_private_key is defined %}
+[auth]
         registerEmailPrivateKey = {{ gerrit_auth_register_email_private_key }}
 {% endif %}
 {% if gerrit_database_type == 'postgresql' %}

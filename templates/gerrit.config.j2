@@ -34,7 +34,7 @@
 {% endif %}
 [sendemail]
 {% if gerrit_sendemail_from is defined %}
-        from = {{ gerrit_from }}
+        from = {{ gerrit_sendemail_from }}
 {% endif %}
         smtpServer = {{ gerrit_sendemail_smtp_server }}
 {% if gerrit_sendemail_smtp_server_port is defined %}
